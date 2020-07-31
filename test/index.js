@@ -12,7 +12,6 @@ describe('TESTING API', () => {
             expect(res).to.have.status(200)
 
             expect(res.body.Transaction).to.have.an('array')
-            expect(res.body.Transaction).to.have.an('array')
             done();
         })
     })

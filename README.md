@@ -1,6 +1,5 @@
 #Task Mile App
 
  - Npm install
+    - Seeder : node ./seed.js
  - Npm start
- - Npm test
- - Seeder : node ./seed.js
