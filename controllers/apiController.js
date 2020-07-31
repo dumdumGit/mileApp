@@ -123,16 +123,17 @@ module.exports = {
                     });
                 }
 
-                console.log(kolId);
+                var transCode = crypto.randomBytes(10).toString('hex');
+                var custCode = crypto.randomBytes(10).toString('hex');
 
                 trans.create({
                     customer_name: customer_name,
-                    customer_code: customer_code,
+                    customer_code: custCode,
                     transaction_amount: transaction_amount,
                     transaction_discount: transaction_discount,
                     transaction_additional_field: transaction_additional_field,
                     transaction_state: transaction_state,
-                    transaction_code: transaction_code,
+                    transaction_code: transCode,
                     transaction_order: transaction_order,
                     createdAt: Date.now(),
                     updatedAt: Date.now(),

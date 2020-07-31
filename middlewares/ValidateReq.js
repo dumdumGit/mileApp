@@ -2,7 +2,14 @@ const { check, validationResult } = require('express-validator');
 
   const userValidationRules = () => {
     return [
-        check('customer_name').not().isEmpty().withMessage('Nama harus di isi')
+        check('customer_name', 'customer name harus di isi').not().isEmpty(),
+        check('transaction_amount', 'transaction amount harus di isi').not().isEmpty(),
+        check('location_id', 'lokasi harus di isi').not().isEmpty(),
+        check('origin_data', 'Origin data harus di isi berupa object').not().isEmpty(),
+        check('destination_data', 'destination data harus di isi berupa object').not().isEmpty(),
+        check('koli_data', 'koli field harus di isi berupa array').not().isEmpty(),
+        check('koli_data', 'koli field harus di isi berupa array').not().isEmpty(),
+        check('connote', 'field harus di isi').not().isEmpty(),
     ]
   }
 
