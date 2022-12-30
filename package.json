@@ -17,7 +17,7 @@
     "express": "~4.16.1",
     "express-validator": "^6.6.0",
     "http-errors": "~1.6.3",
-    "mocha": "^8.1.0",
+    "mocha": "^8.4.0",
     "mongoose": "^5.9.26",
     "mongoose-seed": "^0.6.0",
     "morgan": "~1.9.1",
